@@ -4,7 +4,7 @@ function App() {
   return (
     <div className="App">
       <header className="App-header">
-        <p>Tähän tulee mun resepti-app</p>
+        <p>Tähän tulee mun resepti-app!!!</p>
         <a
           className="App-link"
           href="https://reactjs.org"
