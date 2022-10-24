@@ -1,20 +1,23 @@
 import "./App.css";
+import React from "react";
+import { BrowserRouter as Router } from "react-router-dom";
+import Header from "./Components/Header/Header";
+import Main from "./Components/Main/Main";
+import Footer from "./Components/Footer/Footer";
 
 function App() {
   return (
-    <div className="App">
-      <header className="App-header">
-        <p>Tähän tulee mun resepti-app!!!</p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
-    </div>
+    <Router>
+      <span className="App-Header">
+        <Header />
+      </span>
+      <span className="Main">
+        <Main />
+      </span>
+      <span className="Footer">
+        <Footer />
+      </span>
+    </Router>
   );
 }
 

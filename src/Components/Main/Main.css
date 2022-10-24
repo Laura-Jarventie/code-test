@@ -1,0 +1,56 @@
+@import url("https://fonts.googleapis.com/css2?family=Dancing+Script&family=Montserrat&family=Sacramento&display=swap");
+
+main {
+  text-decoration: none;
+  line-height: 1.5;
+  /*font-family: "Dancing Script", cursive;*/
+  text-align: center;
+  padding-top: 3vh;
+  padding-bottom: 5vh;
+  padding-left: 5vh;
+  padding-right: 5vh;
+  font-size: large;
+}
+
+h1 {
+  margin-top: 3vh;
+}
+.searchBox {
+  border-radius: 5px;
+  padding: 0.5vh;
+  display: inline-block;
+  margin-bottom: 2vh;
+  border-style: inherit;
+  box-shadow: 0 0 5px #aeaeae;
+}
+
+.card {
+  margin: 20px;
+  display: inline-block;
+}
+
+.card-title {
+  font-size: x-large;
+}
+.card-subtitle,
+.card.text {
+  font-weight: 600;
+  font-size: medium;
+  color: black;
+}
+
+.recepyCard {
+  border-radius: 2px;
+  box-shadow: 0 0 5px #aeaeae;
+  height: 180px;
+}
+
+.singleCard {
+  border-radius: 2px;
+  box-shadow: 0 0 5px #aeaeae;
+  height: 800px;
+}
+
+
+
+
