@@ -4,7 +4,7 @@ import "./Footer.css";
 const Footer = () => {
   return (
     <div className="Footer">
-      <h4>© 2022 Laura Järventie All Rights Reserved</h4>
+      <h4>© 2022 Laura Järventie</h4>
     </div>
   );
 };

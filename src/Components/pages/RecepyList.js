@@ -1,22 +1,33 @@
-import React from "react";
+import React, { useState, useEffect } from "react";
 import { Link, useRouteMatch } from "react-router-dom";
 import Card from "react-bootstrap/Card";
+import axios from "axios";
 
-const RecepyCard = ({ id, link, userId, title, body }) => {
+const RecepyCard = ({ id, link, userId, title, button }) => {
   let match = useRouteMatch();
+
+  const deleteRecipe = (id, e) => {
+    e.preventDefault();
+    axios
+      .delete("https://jsonplaceholder.typicode.com/posts/" + id)
+      .then(() =>
+        prompt("DELETED!! Recipe title:", title)
+      ); /*This we use because face database*/
+  };
 
   return (
     <Card style={{ width: "20rem" }}>
       <Card.Body className="recepyCard">
         <>{id}</>
-        <Card.Title className="card-title">Created by:{userId}</Card.Title>
+        <Card.Title className="card-title">Created by: {userId}</Card.Title>
         <Card.Subtitle className="mb-2 text-muted">
-          Recepy:{title}
+          Recepy Title: <br></br>
+          {title}
         </Card.Subtitle>
-        {/*  <Card.Text>{body}</Card.Text> */}
         <div className="linkText">
           <Link to={`${match.path}/${link}`}>See instrutions how to make</Link>
         </div>
+        <button onClick={(e) => deleteRecipe(id, e)}>Delete</button>
       </Card.Body>
     </Card>
   );

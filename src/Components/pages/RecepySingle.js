@@ -11,17 +11,17 @@ const RecepySingle = () => {
   const history = useHistory();
 
   useEffect(() => {
-    if (!recepy) {
-      axios
-        .get("https://jsonplaceholder.typicode.com/posts/" + id)
-        .then((res) => setRecepy(res.data));
-    }
+    /* if (!recepy) { */
+    axios
+      .get("https://jsonplaceholder.typicode.com/posts/" + id)
+      .then((res) => setRecepy(res.data));
+    /* } */
   });
 
   let recepyData = undefined;
 
   if (!recepy) {
-    recepyData = <h1>Ladataan....</h1>;
+    recepyData = <h1>Loading....</h1>;
   }
 
   if (recepy) {
