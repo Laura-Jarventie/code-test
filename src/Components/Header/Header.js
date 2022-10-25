@@ -13,34 +13,11 @@ const Header = () => {
           Home
         </NavLink>
         <NavLink className="nav" to="/recipes">
-          Reseptit
+          Recipes
         </NavLink>
       </ul>
     </header>
   );
 };
-
-/* <Navigate /> */
-
-/* const Navigate = () => {
-  return (
-    <div className="nav">
-      <ul>
-        <li>
-          <NavLink className="nav" to="/" exact>
-            {" "}
-            Home
-          </NavLink>
-        </li>
-        <li>
-          <NavLink className="nav" to="/products" exact>
-            {" "}
-            Products{" "}
-          </NavLink>
-        </li>
-      </ul>
-    </div>
-  );
-}; */
 
 export default Header;
