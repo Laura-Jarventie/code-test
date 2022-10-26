@@ -1,4 +1,4 @@
-import React, { useState, useEffect } from "react";
+import React from "react";
 import { Link, useRouteMatch } from "react-router-dom";
 import Card from "react-bootstrap/Card";
 import axios from "axios";
@@ -12,7 +12,7 @@ const RecepyCard = ({ id, link, userId, title, button }) => {
       .delete("https://jsonplaceholder.typicode.com/posts/" + id)
       .then(() =>
         prompt("DELETED!! Recipe title:", title)
-      ); /*This we use because face database*/
+      ); /*This we use because fake database*/
   };
 
   return (

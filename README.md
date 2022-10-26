@@ -10,6 +10,7 @@ Can be found here: https://laura-jarventie.github.io/code-test
 
 ## This is application build with React.
 
+For the state management, I have used build in react hooks. 
 In the project directory, you can run:
 
 ### `npm start`
@@ -40,5 +41,7 @@ Each post has also delete button.
 RecepyNew creates a new recipe to database.
 
 Note! As I use fake database, post and delete are not actually working. That is why there is prompt message showing that correct recipes are added or created if the database would be real.
+
+
 
 
